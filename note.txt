@@ -1,0 +1,9 @@
+Phân tích nha.chotot.com
+
+        1.Header (nav1, nav2)
+        2. container
+                1.Slider 
+                2.Menu
+                3.News
+                4.MoreInfo
+        3. footer
