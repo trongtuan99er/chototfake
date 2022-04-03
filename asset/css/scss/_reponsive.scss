@@ -13,6 +13,10 @@
                 .menu__item{
                         width: 100%;
                         flex-wrap: nowrap; 
+                        .menu__item-sub{
+                                width: 70vw;
+                                text-align: center;
+                        }
                 }
         }
         .ads{
@@ -35,6 +39,7 @@
         .ftInfo {
                 margin: 30px 20px 20px;
         }
+        #footerMb{display: none;}
         
 
 }
@@ -70,6 +75,7 @@
                                                 font-size: 14px;
                                         }
                         }
+                       
                 }
         }
 
@@ -109,6 +115,58 @@
                 }
             }
         }
-}
+        .ftInfo {
+                height: 220px;
+        }
+        #footerMb{
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #fff;
+                height: 40px;
+                justify-content: space-around;
+                align-items: center;
+                .item_ft{
+                     width: 100%;
+                     height: 100%;   
+                }
+                .item_ft_link{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        font-size: 14px;
+                        color: #666;
+                        width: 100%;
+                        height: 100%;
+                        &:hover{
+                                color: #ffba00;    
+                        }
+                }
+                i,span{
+                        display: block;
+                }
+                .upnews{
+                        background-color:#ffba00; 
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -15px;
+                        // left: 175px;
+                        &:hover{
+                                color: #666;
+                        }
+                }
+                .enable{
+                        color: #ffba00;
+                }
+                // .notification:hover .navbar__submenu1{
+                //         display: block;
+                // }
 
+        }
+}
 

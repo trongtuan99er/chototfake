@@ -8,6 +8,7 @@ showbtn.onclick = function () {
     showbtn.innerText = "Mở rộng";
   }
 };
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",

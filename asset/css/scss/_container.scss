@@ -2,7 +2,7 @@
 .slider{
         background-color: #fff;
         height: auto;
-        margin-top: 10px !important;
+        margin-top: 110px !important;
         
         .swiper{
                 background-color: #ccc;
@@ -49,6 +49,9 @@
         height: 79px;
         display: flex;
         .menu__item{
+                &:hover .menu__item-sub{
+                        display: block;
+                }
                 &:hover{
                         background-color: #f4f4f4;
                         box-shadow: 0px 5px 8px 7px #ccc ;
@@ -67,6 +70,7 @@
                 margin-left: 5px;
                 padding:15px 0px 10px 0px;
                 text-align:left;
+                position: relative;
                 img{
                         height: 60px;
                         width: 60px;
@@ -91,6 +95,38 @@
                                 text-align:left;
                         }
                 }
+                .menu__item-sub{
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        background-color: #fff;
+                        width: 100%;
+                        height: auto;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        justify-content: center;
+                        box-shadow: 0px 10px 10px 1px #666;
+                        display: none;
+                        .sub-item{
+                                margin: 5px 0;
+                                height: 20%;
+                        }
+                        
+                        a{
+                                &:hover{
+                                        background-color: #f4f4f4;
+                                        color: #38699f;
+                                }
+                                display: block;
+                                color: #000;
+                                width: 100%;
+                                height: 100%;
+                                font-size: 16px;
+                                padding: 10px 10px;
+                        }
+                }                        
         }
 }
 

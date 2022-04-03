@@ -2,6 +2,11 @@
     background-color: $bg-primary;
     height: 10rem;
     width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar{
@@ -24,6 +29,7 @@
         justify-content:flex-end;
         line-height:26.25px;
         text-align:left;
+        z-index: 100;
         .navbar__menu-item{
             font-size:17.5px;
             line-height:48px;
@@ -31,6 +37,8 @@
             text-align:left;
             font-weight: unset;
             color: #000;
+            z-index: 100;
+            position: relative;
             span{
             line-height:45px;
             margin:0px 0px 0px 8px;
@@ -44,8 +52,100 @@
                 height: 100%;
             }
             &:hover{
-                opacity: 0.5;
                 cursor: pointer;
+            }
+            &:hover .navbar__subMenu{
+                display: block;
+                
+            }
+            &:hover .navbar__submenu1{
+                display: block;
+                
+            }
+        }
+        // submenu thong bao
+        .navbar__submenu1{
+            position: absolute;
+            width: 400px;
+            height: 170px;
+            background: #fff;
+            top: 100%;
+            right: 0;
+            box-shadow: 0px 10px 20px 0px #999;
+            display: none;
+            .submenu__heading{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+            }
+            .btn-submenu{
+                margin-left: 82px;
+                min-width: 236px;
+                background-color: #FE9900;
+                &:hover{
+                    background-color: #CC7A00 !important;
+                    cursor: pointer;
+                }
+            }
+        }
+        // submenu them
+        .navbar__subMenu{
+            position: absolute;
+            width: 300px;
+            height: auto;
+            background-color: #fff;
+            right: 0;
+            top: 100%;
+            padding: 8px 0px;
+            z-index: 100;
+            max-width: 80vh;
+            border: 1px solid rgba(0,0,0,0.15);
+            border-top: none;
+            display: none;
+        }
+        .navbar__subMenu-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px;
+            
+            .avt{
+                width: 60px;
+                height: 60px;
+                margin-left: -30px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .login a{
+                display: block;
+                color: #222222 !important;
+                text-decoration: none;
+                line-height: normal;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .navbar__subMenu-item{
+            &:hover{
+                background-color: #E8E8E8 !important;
+            }
+            a{
+                display: flex;
+                width: 100%;
+                margin: 2px 10px 2px 15px;
+                span{
+                    display: block;
+                    color: #222222;
+                }   
+                img{
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 5px;
+                }
             }
         }
     }
