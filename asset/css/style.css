@@ -163,82 +163,22 @@ html {
 
 .slider {
   background-color: #fff;
-  height: 238px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  height: auto;
+  margin-top: 10px !important;
 }
-
-.slideShow {
+.slider .swiper {
   background-color: #ccc;
-  height: 238px;
-  width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  margin: 10px 0;
-  border-radius: 4px;
-}
-.slideShow .slide__wrapper {
-  width: 5000px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
-  -webkit-animation: slide 20s linear infinite;
-  cursor: pointer;
+  border-radius: 10px;
 }
-.slideShow .slide__wrapper .slide__wrapper-item {
-  float: left;
-  height: 238px;
-  width: 1000px;
+.slider .swiper a {
+  display: block;
 }
-.slideShow .slide__wrapper .slide__wrapper-item img {
-  width: 1000px;
-  height: 238px;
-}
-@-webkit-keyframes slide {
-  0% {
-    margin-left: 0px;
-  }
-  10% {
-    margin-left: 0px;
-  }
-  15% {
-    margin-left: 0px;
-  }
-  20% {
-    margin-left: -1000px;
-  }
-  25% {
-    margin-left: -1000px;
-  }
-  30% {
-    margin-left: -1000px;
-  }
-  35% {
-    margin-left: -2000px;
-  }
-  40% {
-    margin-left: -2000px;
-  }
-  45% {
-    margin-left: -2000px;
-  }
-  55% {
-    margin-left: -3000px;
-  }
-  60% {
-    margin-left: -3000px;
-  }
-  70% {
-    margin-left: -3000px;
-  }
-  80% {
-    margin-left: -4000px;
-  }
-  90% {
-    margin-left: -4000px;
-  }
-  100% {
-    margin-left: -4000px;
-  }
+.slider .swiper a img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -246,6 +186,11 @@ html {
   min-height: 1000px;
   padding-top: 10px;
   margin-top: 10px;
+}
+.container img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .menu {

@@ -8,8 +8,12 @@
       rel="stylesheet"
       href="./asset/fonts/fontawesome-free-6.1.1-web/css/all.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <title>ChoTot</title>
+    <title>Chợ Tốt</title>
   </head>
   <body>
     <div id="main">
@@ -75,42 +79,30 @@
       <!-- slider -->
       <section class="slider">
         <div class="wide">
-          <div class="slideShow">
-            <div class="slide__wrapper">
-              <a
-                href="https://chuongtrinh.chotot.com/ua-dai-danh-cho-tai-khoan-doanh-nghiep-tai-khoan-nhan-vien/"
-              >
-                <div class="slide__wrapper-item">
-                  <img src="./asset/img/slider2.png" alt="" />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <a href="">
+                  <img src="./asset/img/slider2.png" alt="">
+                </a>
                 </div>
-              </a>
-              <a href="https://www.chotot.com/chuong-trinh/dai-hoi-dai-ha-gia">
-                <div class="slide__wrapper-item">
-                  <img src="./asset/img/slider4.png" alt="" />
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./asset/img/slider1.jfif" alt="">
+                  </a>
                 </div>
-              </a>
-              <a
-                href="https://chuongtrinh.chotot.com/ua-dai-danh-cho-tai-khoan-doanh-nghiep-tai-khoan-nhan-vien/"
-              >
-                <div class="slide__wrapper-item">
-                  <img src="./asset/img/slider3.png" alt="" />
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./asset/img/slider4.png" alt="">
+                  </a>
                 </div>
-              </a>
-              <a
-                href="https://trogiup.chotot.com/nguoi-ban/chuong-trinh-cho-thue-khong-can-coc-la-gi/"
-              >
-                <div class="slide__wrapper-item">
-                  <img src="./asset/img/slider1.jfif" alt="" />
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./asset/img/slider7.jpg" alt="">
+                  </a>
                 </div>
-              </a>
-              <a
-                href="https://xe.chotot.com/tags/xe-o-to-tiet-kiem-xang?theme=veh_otoithaoxang"
-              >
-                <div class="slide__wrapper-item">
-                  <img src="./asset/img/slider7.jpg" alt="" />
-                </div>
-              </a>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -159,97 +151,111 @@
             <h1 class="sale__heading">Mua bán Bất động sản</h1>
 
             <div class="sale__list">
-              <div class="sale__list-box">
-                <img src="./asset/img/sale3.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>BÁN 2 SÀO ĐẤT XÃ HÒA THẮNG.</p>
+              <a href="">
+                <div class="sale__list-box">
+                  <img src="./asset/img/sale3.jpg" alt="" />
+                  <div class="sale__box-name">
+                    <p>BÁN 2 SÀO ĐẤT XÃ HÒA THẮNG.</p>
+                  </div>
+                  <span class="sale__box-area">2000 m²</span>
+                  <span class="sale__box-price">1,7 tỷ</span>
+                  <div class="sale_box-footer">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="sale__box-time">10 Giây Trước</span>
+                    <span class="sale__box-address"> Đắk Lắk</span>
+                  </div>
                 </div>
-                <span class="sale__box-area">2000 m²</span>
-                <span class="sale__box-price">1,7 tỷ</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">10 Giây Trước</span>
-                  <span class="sale__box-address"> Đắk Lắk</span>
-                </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/sale1.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>Bán đất 125m2 đường 7m5 Trần Viện - Hoà Xuân</p>
-                </div>
-                <span class="sale__box-area">125 m²</span>
-                <span class="sale__box-price">3.5 tỷ</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">48 Giây Trước</span>
-                  <span class="sale__box-address"> Đà Nẵng </span>
-                </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/sale2.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>Nhà Chính chủ đường Phạm Thế Hiển</p>
-                </div>
-                <span class="sale__box-area">48.75 m² - 5 PN</span>
-                <span class="sale__box-price">4,8 tỷ</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">50 Giây Trước</span>
-                  <span class="sale__box-address">Tp Hồ Chí Minh</span>
-                </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/sale4.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>Bán đất nền khu Kiều đàm Trần Xuân Soạn</p>
-                </div>
-                <span class="sale__box-area">51 m²</span>
-                <span class="sale__box-price">3.5 tỷ</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">48 Giây Trước</span>
-                  <span class="sale__box-address"> Đà Nẵng </span>
-                </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/sale5.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>CẦN BÁN GẤP 10 LÔ ĐẤT NGAY QL13</p>
-                </div>
-                <span class="sale__box-area">200 m²</span>
-                <span class="sale__box-price">382 triệu</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">1 Phút Trước</span>
-                  <span class="sale__box-address"> Bình Phước </span>
-                </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/sale5.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>CẦN BÁN GẤP 10 LÔ ĐẤT NGAY QL13</p>
-                </div>
-                <span class="sale__box-area">200 m²</span>
-                <span class="sale__box-price">382 triệu</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">1 Phút Trước</span>
-                  <span class="sale__box-address"> Bình Phước </span>
-                </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/sale5.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>CẦN BÁN GẤP 10 LÔ ĐẤT NGAY QL13</p>
-                </div>
-                <span class="sale__box-area">200 m²</span>
-                <span class="sale__box-price">382 triệu</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">1 Phút Trước</span>
-                  <span class="sale__box-address"> Bình Phước </span>
-                </div>
-              </div>
+              </a>
+                <a href="">
+                  <div class="sale__list-box">
+                    <img src="./asset/img/sale1.jpg" alt="" />
+                    <div class="sale__box-name">
+                      <p>Bán đất 125m2 đường 7m5 Trần Viện - Hoà Xuân</p>
+                    </div>
+                    <span class="sale__box-area">125 m²</span>
+                    <span class="sale__box-price">3.5 tỷ</span>
+                    <div class="sale_box-footer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="sale__box-time">48 Giây Trước</span>
+                      <span class="sale__box-address"> Đà Nẵng </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="sale__list-box">
+                    <img src="./asset/img/sale2.jpg" alt="" />
+                    <div class="sale__box-name">
+                      <p>Nhà Chính chủ đường Phạm Thế Hiển</p>
+                    </div>
+                    <span class="sale__box-area">48.75 m² - 5 PN</span>
+                    <span class="sale__box-price">4,8 tỷ</span>
+                    <div class="sale_box-footer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="sale__box-time">50 Giây Trước</span>
+                      <span class="sale__box-address">Tp Hồ Chí Minh</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="sale__list-box">
+                    <img src="./asset/img/sale4.jpg" alt="" />
+                    <div class="sale__box-name">
+                      <p>Bán đất nền khu Kiều đàm Trần Xuân Soạn</p>
+                    </div>
+                    <span class="sale__box-area">51 m²</span>
+                    <span class="sale__box-price">3.5 tỷ</span>
+                    <div class="sale_box-footer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="sale__box-time">48 Giây Trước</span>
+                      <span class="sale__box-address"> Đà Nẵng </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="sale__list-box">
+                    <img src="./asset/img/sale5.jpg" alt="" />
+                    <div class="sale__box-name">
+                      <p>CẦN BÁN GẤP 10 LÔ ĐẤT NGAY QL13</p>
+                    </div>
+                    <span class="sale__box-area">200 m²</span>
+                    <span class="sale__box-price">382 triệu</span>
+                    <div class="sale_box-footer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="sale__box-time">1 Phút Trước</span>
+                      <span class="sale__box-address"> Bình Phước </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="sale__list-box">
+                    <img src="./asset/img/sale5.jpg" alt="" />
+                    <div class="sale__box-name">
+                      <p>CẦN BÁN GẤP 10 LÔ ĐẤT NGAY QL13</p>
+                    </div>
+                    <span class="sale__box-area">200 m²</span>
+                    <span class="sale__box-price">382 triệu</span>
+                    <div class="sale_box-footer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="sale__box-time">1 Phút Trước</span>
+                      <span class="sale__box-address"> Bình Phước </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="sale__list-box">
+                    <img src="./asset/img/sale5.jpg" alt="" />
+                    <div class="sale__box-name">
+                      <p>CẦN BÁN GẤP 10 LÔ ĐẤT NGAY QL13</p>
+                    </div>
+                    <span class="sale__box-area">200 m²</span>
+                    <span class="sale__box-price">382 triệu</span>
+                    <div class="sale_box-footer">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span class="sale__box-time">1 Phút Trước</span>
+                      <span class="sale__box-address"> Bình Phước </span>
+                    </div>
+                  </div>
+                </a>
             </div>
 
             <div class="sale__more">
@@ -261,19 +267,22 @@
             <h1 class="sale__heading">Cho thuê Bất động sản</h1>
 
             <div class="sale__list">
-              <div class="sale__list-box">
-                <img src="./asset/img/rent1.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>Cho thuê mặt bằng đường song hành</p>
+              <a href="">
+                <div class="sale__list-box">
+                  <img src="./asset/img/rent1.jpg" alt="" />
+                  <div class="sale__box-name">
+                    <p>Cho thuê mặt bằng đường song hành</p>
+                  </div>
+                  <span class="sale__box-area">600 m²</span>
+                  <span class="sale__box-price">35 triệu/tháng</span>
+                  <div class="sale_box-footer">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="sale__box-time">48 Giây Trước</span>
+                    <span class="sale__box-address"> Đà Nẵng </span>
+                  </div>
                 </div>
-                <span class="sale__box-area">600 m²</span>
-                <span class="sale__box-price">35 triệu/tháng</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">48 Giây Trước</span>
-                  <span class="sale__box-address"> Đà Nẵng </span>
-                </div>
-              </div>
+              </a>
+              <a href="">
               <div class="sale__list-box">
                 <img src="./asset/img/rent2.jpg" alt="" />
                 <div class="sale__box-name">
@@ -287,6 +296,8 @@
                   <span class="sale__box-address"> Đà Nẵng </span>
                 </div>
               </div>
+              </a>
+              <a href="">
               <div class="sale__list-box">
                 <img src="./asset/img/rent3.jpg" alt="" />
                 <div class="sale__box-name">
@@ -300,32 +311,52 @@
                   <span class="sale__box-address"> Đà Nẵng </span>
                 </div>
               </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/rent4.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>Dãy trọ CVPM quang trung sát bên CC HƯng Ngân</p>
+              </a>
+              <a href="">
+                <div class="sale__list-box">
+                  <img src="./asset/img/rent4.jpg" alt="" />
+                  <div class="sale__box-name">
+                    <p>Dãy trọ CVPM quang trung sát bên CC HƯng Ngân</p>
+                  </div>
+                  <span class="sale__box-area">120 m²</span>
+                  <span class="sale__box-price">2,5 triệu/tháng</span>
+                  <div class="sale_box-footer">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="sale__box-time">2 Phút Trước</span>
+                    <span class="sale__box-address"> Đà Nẵng </span>
+                  </div>
                 </div>
-                <span class="sale__box-area">120 m²</span>
-                <span class="sale__box-price">2,5 triệu/tháng</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">2 Phút Trước</span>
-                  <span class="sale__box-address"> Đà Nẵng </span>
+              </a>
+              <a href="">
+                <div class="sale__list-box">
+                  <img src="./asset/img/rent5.jpg" alt="" />
+                  <div class="sale__box-name">
+                    <p>Cho thuê mặt bằng đường song hành</p>
+                  </div>
+                  <span class="sale__box-area">600 m²²</span>
+                  <span class="sale__box-price">35 triệu/tháng</span>
+                  <div class="sale_box-footer">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="sale__box-time">48 Giây Trước</span>
+                    <span class="sale__box-address"> Thanh hoá </span>
+                  </div>
                 </div>
-              </div>
-              <div class="sale__list-box">
-                <img src="./asset/img/rent5.jpg" alt="" />
-                <div class="sale__box-name">
-                  <p>Cho thuê mặt bằng đường song hành</p>
+              </a>
+              <a href="">
+                <div class="sale__list-box">
+                  <img src="./asset/img/rent5.jpg" alt="" />
+                  <div class="sale__box-name">
+                    <p>Cho thuê mặt bằng đường song hành</p>
+                  </div>
+                  <span class="sale__box-area">600 m²²</span>
+                  <span class="sale__box-price">35 triệu/tháng</span>
+                  <div class="sale_box-footer">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="sale__box-time">48 Giây Trước</span>
+                    <span class="sale__box-address"> Thanh hoá </span>
+                  </div>
                 </div>
-                <span class="sale__box-area">600 m²²</span>
-                <span class="sale__box-price">35 triệu/tháng</span>
-                <div class="sale_box-footer">
-                  <i class="fa-solid fa-briefcase"></i>
-                  <span class="sale__box-time">48 Giây Trước</span>
-                  <span class="sale__box-address"> Thanh hoá </span>
-                </div>
-              </div>
+              </a>
             </div>
 
             <div class="sale__more">
@@ -341,63 +372,71 @@
           <section class="news">
             <h1 class="news__heading">Tin tức Bất động sản</h1>
             <div class="news__list">
-              <div class="new__list-box">
-                <img src="./asset/img/infomaition2.jpg" alt="" />
-                <div class="new__list-info">
-                  <div class="news__list-name">
-                    <p>
-                      Kinh doanh nhà trọ và những điều cần biết trước khi đầu tư
+              <a href="">
+                <div class="new__list-box">
+                  <img src="./asset/img/infomaition2.jpg" alt="" />
+                  <div class="new__list-info">
+                    <div class="news__list-name">
+                      <p>
+                        Kinh doanh nhà trọ và những điều cần biết trước khi đầu tư
+                      </p>
+                    </div>
+                    <p class="news__list-ders">
+                      Để bắt đầu kinh doanh nhà trọ như thế nào, có những điều gì
+                      cần lưu ý? Hãy cùng tham khảo một số thông tin cùng Chợ Tốt
+                      Nhà trong bài viết
                     </p>
                   </div>
-                  <p class="news__list-ders">
-                    Để bắt đầu kinh doanh nhà trọ như thế nào, có những điều gì
-                    cần lưu ý? Hãy cùng tham khảo một số thông tin cùng Chợ Tốt
-                    Nhà trong bài viết
-                  </p>
                 </div>
-              </div>
-              <div class="new__list-box">
-                <img src="./asset/img/Infomaiton1.jpeg" alt="" />
-                <div class="new__list-info">
-                  <div class="news__list-name">
-                    <p>Quy định bồi thường đất nông nghiệp mới nhất 2022</p>
-                  </div>
-                  <p class="news__list-ders">
-                    Bồi thường đất nông nghiệp là một trong những vấn đề nóng
-                    sốt trong nhiều năm qua nhưng không phải ai cũng hiểu rõ vấn
-                    đề này.
-                  </p>
-                </div>
-              </div>
-              <div class="new__list-box">
-                <img src="./asset/img/infomaition3.jpg" alt="" />
-                <div class="new__list-info">
-                  <div class="news__list-name">
-                    <p>
-                      Đặc trưng nổi bật trong kiến trúc nhà kiểu Nhật truyền
-                      thống
+                </a>
+              <a href="">
+                <div class="new__list-box">
+                  <img src="./asset/img/Infomaiton1.jpeg" alt="" />
+                  <div class="new__list-info">
+                    <div class="news__list-name">
+                      <p>Quy định bồi thường đất nông nghiệp mới nhất 2022</p>
+                    </div>
+                    <p class="news__list-ders">
+                      Bồi thường đất nông nghiệp là một trong những vấn đề nóng
+                      sốt trong nhiều năm qua nhưng không phải ai cũng hiểu rõ vấn
+                      đề này.
                     </p>
                   </div>
-                  <p class="news__list-ders">
-                    Nhà kiểu Nhật truyền thống có những đặc điểm độc đáo về kiến
-                    trúc và nội thất, nó được coi là một phần quan trọng trong
-                    văn hóa Nhật Bản.
-                  </p>
                 </div>
-              </div>
-              <div class="new__list-box">
-                <img src="./asset/img/infomaition4jpg.webp" alt="" />
-                <div class="new__list-info">
-                  <div class="news__list-name">
-                    <p>7 cách bán đất nhanh nhất không thể bỏ qua</p>
+              </a>
+              <a href="">
+                <div class="new__list-box">
+                  <img src="./asset/img/infomaition3.jpg" alt="" />
+                  <div class="new__list-info">
+                    <div class="news__list-name">
+                      <p>
+                        Đặc trưng nổi bật trong kiến trúc nhà kiểu Nhật truyền
+                        thống
+                      </p>
+                    </div>
+                    <p class="news__list-ders">
+                      Nhà kiểu Nhật truyền thống có những đặc điểm độc đáo về kiến
+                      trúc và nội thất, nó được coi là một phần quan trọng trong
+                      văn hóa Nhật Bản.
+                    </p>
                   </div>
-                  <p class="news__list-ders">
-                    Cách bán đất nhanh nhất hiện đang là vấn đề được rất nhiều
-                    người quan tâm. Mách bạn những cách bán đất hiệu quả từ
-                    những chuyên gia bđs.
-                  </p>
                 </div>
-              </div>
+              </a>
+              <a href="">
+                <div class="new__list-box">
+                  <img src="./asset/img/infomaition4jpg.webp" alt="" />
+                  <div class="new__list-info">
+                    <div class="news__list-name">
+                      <p>7 cách bán đất nhanh nhất không thể bỏ qua</p>
+                    </div>
+                    <p class="-ders">
+                      Cách bán đất nhanh nhất hiện đang là vấn đề được rất nhiều
+                      người quan tâm. Mách bạn những cách bán đất hiệu quả từ
+                      những chuyên gia bđs.
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
             <div class="news__more">
               <a href="#" class="news__link">Xem thêm ></a>
@@ -553,6 +592,7 @@
       </footer>
     </div>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./asset/js/main.js"></script>
   </body>
 </html>
