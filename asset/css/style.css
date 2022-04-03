@@ -164,6 +164,8 @@ html {
 .slider {
   background-color: #fff;
   height: 238px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .slideShow {
@@ -329,7 +331,7 @@ html {
 }
 
 .sale__list {
-  height: 330px;
+  height: 350px;
   width: 100%;
   align-items: flex-start;
   background-color: #ffffff;
@@ -338,9 +340,16 @@ html {
   font-size: 17.5px;
   line-height: 26.25px;
   text-align: left;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: block;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 32px;
 }
 .sale__list .sale__list-box {
+  scroll-snap-align: start;
   border-radius: 5px;
   width: 192px;
   height: 323px;
@@ -443,12 +452,15 @@ html {
 
 .ads {
   width: 100%;
-  height: 120px;
+  height: auto;
 }
-.ads img {
+.ads .ads__pc {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+.ads .ads__moble {
+  display: none;
 }
 
 .news {
@@ -469,8 +481,13 @@ html {
 .news__list {
   display: flex;
   justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
 }
 .news__list .new__list-box {
+  scroll-snap-align: start;
   flex-direction: column;
   display: flex;
   padding: 8px;
@@ -544,11 +561,24 @@ html {
 }
 
 .moreInfo__ders {
-  color: 777777;
+  color: #777777;
   font-family: Helvetica;
   font-size: 12px;
   line-height: 18px;
   margin: 0px 0px 5px;
+}
+
+.moreInfo__ders1 {
+  color: #222222;
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify;
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .moreInfo__btn {
@@ -559,9 +589,10 @@ html {
   padding: 10px 12px 12px;
   text-align: center;
 }
-.moreInfo__btn a {
+.moreInfo__btn button {
   text-decoration: none;
   color: #38699f;
+  cursor: pointer;
 }
 
 #header {
@@ -723,6 +754,109 @@ html {
 .search .search__btn:hover {
   background-color: #CC7A00 !important;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 999px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .search {
+    margin: 0 10px;
+  }
+
+  .slider {
+    margin: 0 10px;
+  }
+
+  .menu__list .menu__item {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .ads .ads__pc {
+    display: none;
+  }
+  .ads .ads__moble {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .moreInfo {
+    margin: 0 20px;
+  }
+
+  .footer__menu {
+    margin: 0 15px;
+  }
+
+  .ftInfo {
+    margin: 30px 20px 20px;
+  }
+}
+@media only screen and (max-width: 739px) {
+  .navbar .logo {
+    justify-content: center;
+  }
+  .navbar .navbar__menu {
+    display: none;
+  }
+
+  .search .search__login,
+.search .search__btn {
+    display: none;
+  }
+  .search .search__box {
+    width: 100%;
+  }
+
+  .menu__list {
+    height: 110px;
+  }
+  .menu__list .menu__item {
+    flex-direction: column;
+  }
+  .menu__list .menu__item .menu__item-info .menu__item-ders {
+    display: none;
+  }
+  .menu__list .menu__item .menu__item-info .menu__item-heading {
+    font-size: 14px;
+  }
+
+  .sale {
+    margin-top: 45px;
+  }
+
+  .ads {
+    width: auto;
+    height: auto;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__menu .support .heading, .footer__menu .about .heading {
+    text-align: center;
+  }
+  .footer__menu .support .support__list, .footer__menu .support .about__list, .footer__menu .about .support__list, .footer__menu .about .about__list {
+    align-items: center;
+  }
+  .footer__menu .about {
+    margin-top: 20px;
+  }
+  .footer__menu .link .heading {
+    text-align: center;
+  }
+  .footer__menu .link .link__socical {
+    justify-content: space-evenly;
+  }
+  .footer__menu .link .register a {
+    width: 85%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
