@@ -133,7 +133,7 @@
 // sale
 .sale{
         background-color: #fff;
-        margin-top: 20px;
+        margin-top: 15px;
 }
 .sale__heading{
         @include heading()
@@ -277,7 +277,7 @@
 // news
 .news{
         background-color: #fff;
-        margin-top: 20px;
+        margin-top: 15px;
 }
 .news__heading{
         @include heading()
@@ -286,7 +286,10 @@
         display: flex;
         justify-content: space-between;
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        // scroll-snap-type: x mandatory;
+        gap: 5px;
+        overflow-y: hidden;
+        scroll-snap-type: block;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 20px;
         .new__list-box{

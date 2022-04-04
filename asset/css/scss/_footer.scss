@@ -5,7 +5,7 @@
 .footer__menu{
         display: flex;
         justify-content: space-between;
-        padding-bottom: 40px
+        padding-bottom: 20px
 }
 .heading{
         @include heading();
@@ -74,8 +74,8 @@
                 height: 40px;
                 a{
                         display: block;
-                        width: 130px;
-                        height: 40px;  
+                        width: 50%;
+                        height: auto;
                         img{
                                 width: 100%;
                                 height: 100%;   

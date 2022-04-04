@@ -1,5 +1,6 @@
 const more = document.querySelector(".moreInfo__ders1");
 const showbtn = document.querySelector(".moreInfo__btn1");
+
 showbtn.onclick = function () {
   more.classList.toggle("active");
   if (more.classList.contains("active")) {
