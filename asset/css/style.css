@@ -63,11 +63,11 @@ html {
 
 .download {
   width: 234px;
-  height: 200px;
+  height: 180px;
 }
 .download .download__box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .download .download__box .download__box-qr {
   width: 87px;
@@ -199,7 +199,7 @@ html {
 
 .menu {
   background-color: #fff;
-  height: 128px;
+  min-height: 170px;
   top: 20px;
   padding-top: 12px;
 }
@@ -216,7 +216,7 @@ html {
 
 .menu__list {
   width: 100%;
-  height: 79px;
+  min-height: 79px;
   display: flex;
 }
 .menu__list .menu__item {
@@ -232,7 +232,7 @@ html {
   font-size: 17.5px;
   line-height: 26.25px;
   margin-left: 5px;
-  padding: 15px 0px 10px 0px;
+  padding: 15px 5px 10px 10px;
   text-align: left;
   position: relative;
 }
@@ -241,7 +241,7 @@ html {
 }
 .menu__list .menu__item:hover {
   background-color: #f4f4f4;
-  box-shadow: 0px 5px 8px 7px #ccc;
+  box-shadow: 0px 7px 12px 2px #ccc;
 }
 .menu__list .menu__item img {
   height: 60px;
@@ -268,6 +268,7 @@ html {
   text-align: left;
 }
 .menu__list .menu__item .menu__item-sub {
+  z-index: 10;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -297,6 +298,19 @@ html {
 .menu__list .menu__item .menu__item-sub a:hover {
   background-color: #f4f4f4;
   color: #38699f;
+}
+.menu__list .menu__new {
+  position: relative;
+}
+.menu__list .menu__new .menu__item-new {
+  top: 12px;
+  position: absolute;
+  background: red;
+  color: #fff;
+  padding: 2px 3px;
+  left: 0;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .sale {
@@ -347,6 +361,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 .sale__list .sale__list-box:hover {
   box-shadow: #ccc 0px 0px 11px 3px;
@@ -419,6 +434,17 @@ html {
   text-overflow: ellipsis;
   word-break: break-word;
   margin: 0 5px;
+}
+.sale__list .sale__list-box .sale__heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 47%;
+}
+.sale__list .sale__list-box .sale__heart img {
+  width: 100%;
+  height: 100%;
 }
 
 .sale__more {
@@ -652,7 +678,7 @@ html {
 .navbar .navbar__menu .navbar__submenu1 {
   position: absolute;
   width: 400px;
-  height: 170px;
+  min-height: 170px;
   background: #fff;
   top: 100%;
   right: 0;
@@ -665,13 +691,18 @@ html {
   text-align: center;
 }
 .navbar .navbar__menu .navbar__submenu1 .btn-submenu {
-  margin-left: 82px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   min-width: 236px;
   background-color: #FE9900;
 }
 .navbar .navbar__menu .navbar__submenu1 .btn-submenu:hover {
   background-color: #CC7A00 !important;
   cursor: pointer;
+}
+.navbar .navbar__menu .navbar__submenu1 .action_submenu {
+  display: none;
 }
 .navbar .navbar__menu .navbar__subMenu {
   position: absolute;
@@ -928,6 +959,10 @@ html {
   }
 }
 @media only screen and (max-width: 739px) {
+  .heading {
+    text-align: center;
+  }
+
   #header {
     z-index: 100;
   }
@@ -942,13 +977,13 @@ html {
   .notifi_menu .subnotifi_moble {
     position: absolute;
     display: block;
-    z-index: 50;
+    z-index: -1;
     background-color: #fff;
     left: 0;
     right: 0;
-    height: 82vh;
-    top: calc(9rem - 93vh);
-    padding-top: 10px;
+    height: 85vh;
+    top: calc(10rem - 95vh);
+    padding-top: 20px;
     display: none;
   }
   .notifi_menu .subnotifi_moble p {
@@ -958,7 +993,9 @@ html {
   }
   .notifi_menu .subnotifi_moble .btn-subnotifi {
     margin-top: 20px;
-    margin-left: 82px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     min-width: 236px;
     background-color: #FE9900 !important;
   }
@@ -990,23 +1027,24 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(9rem - 93vh);
-    height: 82vh;
+    top: calc(10rem - 95vh);
+    height: 85vh;
     padding-top: 15px;
     background-color: #fff;
-    z-index: 50;
+    z-index: -1;
     border: 1px solid rgba(0, 0, 0, 0.15);
   }
   .submenu-moble .navbar__subMenu-login {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    margin: 15px;
+    margin: 10px 0 10px 35px;
   }
   .submenu-moble .navbar__subMenu-login .avt {
     width: 80px;
     height: 80px;
     margin-left: -25px;
+    margin-right: 15px;
   }
   .submenu-moble .navbar__subMenu-login .avt img {
     display: block;
@@ -1070,10 +1108,6 @@ html {
   }
   .menu__list .menu__item .menu__item-info .menu__item-heading {
     font-size: 14px;
-  }
-
-  .sale {
-    margin-top: 45px;
   }
 
   .rent {

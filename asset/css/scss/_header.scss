@@ -70,7 +70,7 @@
         .navbar__submenu1{
             position: absolute;
             width: 400px;
-            height: 170px;
+            min-height: 170px;
             background: #fff;
             top: 100%;
             right: 0;
@@ -82,13 +82,18 @@
                 text-align: center;
             }
             .btn-submenu{
-                margin-left: 82px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
                 min-width: 236px;
                 background-color: #FE9900;
                 &:hover{
                     background-color: #CC7A00 !important;
                     cursor: pointer;
                 }
+            }
+            .action_submenu{
+                display: none;
             }
         }
         // submenu them
