@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <filter id="9ore3oypta" width="130%" height="130%" x="-15%" y="-15%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.792156863 0 0 0 0 0.792156863 0 0 0 0 0.792156863 0 0 0 0.5 0"/>
+        </filter>
+        <circle id="fjmqg9678b" cx="20" cy="20" r="20"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-135 -450) translate(83 454) translate(56)">
+                        <use fill="#000" filter="url(#9ore3oypta)" xlink:href="#fjmqg9678b"/>
+                        <use fill="#FFF" xlink:href="#fjmqg9678b"/>
+                    </g>
+                    <g fill-rule="nonzero">
+                        <path fill="#4285F4" d="M19.579 10.234c0-.677-.055-1.359-.172-2.025h-9.403v3.839h5.384c-.223 1.238-.941 2.333-1.992 3.029v2.49h3.212c1.887-1.735 2.97-4.3 2.97-7.333z" transform="translate(-135 -450) translate(83 454) translate(56) translate(10 10)"/>
+                        <path fill="#34A853" d="M10.004 19.974c2.688 0 4.956-.882 6.608-2.406l-3.213-2.491c-.894.608-2.047.952-3.392.952-2.6 0-4.806-1.754-5.597-4.113H1.095v2.568c1.693 3.366 5.14 5.49 8.909 5.49z" transform="translate(-135 -450) translate(83 454) translate(56) translate(10 10)"/>
+                        <path fill="#FBBC04" d="M4.407 11.916c-.418-1.238-.418-2.579 0-3.817V5.53H1.095c-1.414 2.817-1.414 6.136 0 8.953l3.312-2.568z" transform="translate(-135 -450) translate(83 454) translate(56) translate(10 10)"/>
+                        <path fill="#EA4335" d="M10.004 3.982c1.42-.022 2.795.513 3.824 1.494l2.846-2.846C14.872.938 12.48.007 10.004.037c-3.77 0-7.216 2.124-8.909 5.494L4.407 8.1c.787-2.363 2.996-4.117 5.597-4.117z" transform="translate(-135 -450) translate(83 454) translate(56) translate(10 10)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

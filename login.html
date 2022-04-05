@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./asset/fonts/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="/asset/css/styleLogin.css" />
+    <title>Đăng nhập</title>
+  </head>
+  <body>
+    <div id="main">
+      <header id="header">
+        <div class="wide">
+          <div class="navbar">
+            <a href="./index.html">
+              <div class="logo">
+                <img src="./asset/img/nha_white_logo.webp" alt="" />
+              </div>
+            </a>
+            <div class="navbar__menu">
+              <div class="navbar__menu-item">
+                <a href="./index.html" class="navbar__item-link">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Trang chủ</span>
+                </a>
+              </div>
+              <div class="navbar__menu-item">
+                <a href="./index.html" class="navbar__item-link">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                  <span>Quản lý tin</span>
+                </a>
+              </div>
+              <div class="navbar__menu-item">
+                <a href="./index.html" class="navbar__item-link">
+                  <i class="fa-solid fa-comments"></i>
+                  <span>Chat</span>
+                </a>
+              </div>
+              <div class="navbar__menu-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Thông báo</span>
+
+                <div class="navbar__submenu1">
+                  <div class="submenu__heading">
+                    <h3 style="border-bottom: 3px solid #ffba00; width: 50%">
+                      HOẠT ĐỘNG
+                    </h3>
+                    <h3
+                      style="
+                        color: #ccc;
+                        border-bottom: 3px solid #ccc;
+                        width: 50%;
+                      "
+                    >
+                      TIN MỚi
+                    </h3>
+                  </div>
+                  <p style="font-size: 16px; padding: 0 10px">
+                    Vui lòng đăng nhập để xem danh sách hoạt động.
+                  </p>
+                  <a href="./register.html">
+                    <button class="btn btn-submenu">ĐĂNG KÝ / ĐĂNG NHẬP</button>
+                  </a>
+                </div>
+              </div>
+              <div class="navbar__menu-item">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>Thêm</span>
+                <div class="navbar__subMenu">
+                  <div class="navbar__subMenu-login">
+                    <div class="avt">
+                      <img src="./asset/img/avt.png" alt="" />
+                    </div>
+                    <div class="login">
+                      <a href="./register.html"> <span> Đăng ký ngay</span></a>
+                    </div>
+                  </div>
+                  <div
+                    class="navbar__subMenu-item"
+                    style="background-color: #fff7ea"
+                  >
+                    <a href="">
+                      <img src="./asset/img/walet.svg" alt="" />
+                      <span>Ví bán hàng </span>
+                      <i
+                        style="
+                          color: orange;
+                          font-size: 15px;
+                          margin-left: 30px;
+                        "
+                        >Liên kết ngay ></i
+                      >
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu2.svg" alt="" />
+                      <span>Đơn bán</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu3.svg" alt="" />
+                      <span>Đơn mua</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu4.svg" alt="" />
+                      <span>Tin đăng đã lưu</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu5.svg" alt="" />
+                      <span>Tìm kiếm đã lưu</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu6.svg" alt="" />
+                      <span>Bạn bè</span>
+                    </a>
+                  </div>
+                  <div
+                    class="navbar__subMenu-item"
+                    style="
+                      border-top: 1px solid #ccc;
+                      border-bottom: 1px solid #ccc;
+                    "
+                  >
+                    <a href="">
+                      <img src="./asset/img/submenu7.svg" alt="" />
+                      <span>Tạo Cửa hàng/Chuyên trang</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu8.svg" alt="" />
+                      <span>Chợ Tốt Ưu đãi</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu9.svg" alt="" />
+                      <span>Vòng quay may mắn</span>
+                    </a>
+                  </div>
+                  <div
+                    class="navbar__subMenu-item"
+                    style="
+                      border-top: 1px solid #ccc;
+                      border-bottom: 1px solid #ccc;
+                    "
+                  >
+                    <a href="">
+                      <img src="./asset/img/submenu10.svg" alt="" />
+                      <span>Tải ứng dụng miễn phí</span>
+                    </a>
+                  </div>
+                  <div class="navbar__subMenu-item">
+                    <a href="">
+                      <img src="./asset/img/submenu11.svg" alt="" />
+                      <span>Trợ giúp</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search">
+            <div class="search__box">
+              <div class="search__box-menu">
+                <span>Mua bán</span>
+                <i class="fa-solid fa-angle-down"></i>
+
+                <div class="search__box-sub">
+                  <div class="search_box-item">
+                    <span>Mua bán</span>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="search_box-item">
+                    <span>Cho thuê</span>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <input type="text" placeholder="Bất động sản" />
+              <i class="icon-search fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="search__login">
+              <a href="./login.html" class="login__link">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Đăng Nhập</span>
+              </a>
+            </div>
+            <div class="search__btn btn">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <span>Đăng Tin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- login  -->
+      <div id="login">
+        <div class="login_header">
+          <a href="./index.html">Trang chủ</a>
+          <span>>>></span>
+          <span>Đăng nhập</span>
+        </div>
+        <!-- form login -->
+        <form action="" method="POST" class="form" id="form-1">
+          <div class="form_top">
+            <div class="form_header">
+              <h3 class="heading">Đăng Nhập</h3>
+              <h4 class="derc">Chào bạn quay lại</h4>
+            </div>
+            <div class="form_img">
+              <img src="./asset/img/formimg.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- <div class="spacer"></div> -->
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Nhập email của bạn"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Nhập mật khẩu của bạn"
+              class="form-control"
+            />
+            <span class="form-message"></span>
+          </div>
+
+          <button class="form-submit">Đăng Nhập</button>
+
+          <div class="form_bottom">
+            <p class="desc">
+              <a href="#">Bạn quên mật khẩu ?</a>
+            </p>
+            <br />
+            <div class="form_socical">
+              <p>hoặc sử dụng</p>
+              <div class="socical_group">
+                <img src="./asset/img/fb_login.svg" alt="" />
+                <img
+                  class="icon-shadow"
+                  src="./asset/img/gg_login.svg"
+                  alt=""
+                />
+                <img
+                  class="icon-shadow"
+                  src="./asset/img/apple_login.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <br />
+            <p class="desc">
+              Chưa có tài khoản ? <a href="./register.html">Đăng ký ngay!</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- footer -->
+      <footer id="footer">
+        <div class="wide">
+          <div class="footer__menu">
+            <div class="download">
+              <div class="heading">
+                <p>TẢI ỨNG DỤNG CHỢ TỐT</p>
+              </div>
+              <div class="download__box">
+                <img
+                  class="download__box-qr"
+                  src="./asset/img/qr-code.png"
+                  alt=""
+                />
+                <div class="download__box-link">
+                  <a href="#">
+                    <img
+                      class="download__box-gg"
+                      src="./asset/img/gg.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      class="download__box-app"
+                      src="./asset/img/app.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      class="download__box-app"
+                      src="./asset/img/app1.webp"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="support">
+              <div class="heading">
+                <p>HỖ TRỢ KHÁCH HÀNG</p>
+              </div>
+              <div class="support__list">
+                <a href="#">Trung tâm trợ giúp</a>
+                <a href="#">An toàn mua bán</a>
+                <a href="#">Quy định cần biết</a>
+                <a href="#">Quy chế quyền riêng tư</a>
+                <a href="#">Liên hệ hỗ trợ</a>
+              </div>
+            </div>
+            <div class="about">
+              <div class="heading">
+                <p>VỀ CHỢ TỐT</p>
+              </div>
+              <div class="about__list">
+                <a href="#">Giới thiệu</a>
+                <a href="#">Tuyển dụng</a>
+                <a href="#">Truyền thông</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+            <div class="link">
+              <div class="heading">
+                <p>LIÊN KẾT</p>
+              </div>
+              <div class="link__socical">
+                <a href="#">
+                  <img src="./asset/img/logo-fb.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./asset/img/youtube.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./asset/img/linkln.jfif" alt="" />
+                </a>
+              </div>
+              <div class="heading">
+                <p>CHỨNG NHẬN</p>
+              </div>
+              <div class="register">
+                <a href="#">
+                  <img src="./asset/img/registerlogo.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ftInfo">
+          <div class="wide">
+            <p>
+              CÔNG TY TNHH CHỢ TỐT - Địa chỉ: Phòng 1808, Tầng 18, Mê Linh Point
+              Tower, 02 Ngô Đức Kế, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh Giấy
+              chứng nhận đăng ký doanh nghiệp số 0312120782 do Sở Kế Hoạch và
+              Đầu Tư TPHCM cấp ngày 11/01/2013 Email: trogiup@chotot.vn - Tổng
+              đài CSKH: 19003003 (1.000đ/phút) !
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <section id="footerMb">
+        <div class="item_ft">
+          <a href="#" class="item_ft_link enable">
+            <i class="fa-solid fa-house"></i>
+            <span>Trang chủ</span>
+          </a>
+        </div>
+        <div class="item_ft">
+          <a href="#" class="item_ft_link">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span style="font-size: 13px">Quản lý tin</span>
+          </a>
+        </div>
+        <div class="item_ft">
+          <a href="#" class="item_ft_link upnews">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Đăng tin</span>
+          </a>
+        </div>
+        <div class="item_ft notifi_menu">
+          <button href="#" class="item_ft_link notification">
+            <i class="fa-solid fa-bell"></i>
+            <span>Thông báo</span>
+          </button>
+          <div class="subnotifi_moble">
+            <div class="sub__heading">
+              <h3 style="border-bottom: 3px solid #ffba00; width: 50%">
+                HOẠT ĐỘNG
+              </h3>
+              <h3
+                style="color: #ccc; border-bottom: 3px solid #ccc; width: 50%"
+              >
+                TIN MỚi
+              </h3>
+            </div>
+            <p style="font-size: 16px; padding: 0 10px">
+              Vui lòng đăng nhập để xem danh sách hoạt động.
+            </p>
+            <a href="./register.html    ">
+              <button class="btn btn-subnotifi">ĐĂNG KÝ</button>
+            </a>
+          </div>
+        </div>
+        <div class="item_ft more-moble">
+          <button href="#" class="item_ft_link">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span>Thêm</span>
+          </button>
+          <div class="navbar__subMenu submenu-moble">
+            <div class="navbar__subMenu-login">
+              <div class="avt">
+                <img src="./asset/img/avt.png" alt="" />
+              </div>
+              <div class="login">
+                <a href="./register.html"> <span>Đăng ký ngay</span></a>
+              </div>
+            </div>
+            <div class="navbar__subMenu-item" style="background-color: #fff7ea">
+              <a href="">
+                <img src="./asset/img/walet.svg" alt="" />
+                <span>Ví bán hàng </span>
+                <i style="color: orange; font-size: 17px; margin-left: 100px"
+                  >Liên kết ngay ></i
+                >
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu2.svg" alt="" />
+                <span>Đơn bán</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu3.svg" alt="" />
+                <span>Đơn mua</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu4.svg" alt="" />
+                <span>Tin đăng đã lưu</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu5.svg" alt="" />
+                <span>Tìm kiếm đã lưu</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu6.svg" alt="" />
+                <span>Bạn bè</span>
+              </a>
+            </div>
+            <div
+              class="navbar__subMenu-item"
+              style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc"
+            >
+              <a href="">
+                <img src="./asset/img/submenu7.svg" alt="" />
+                <span>Tạo Cửa hàng/Chuyên trang</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu8.svg" alt="" />
+                <span>Chợ Tốt Ưu đãi</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu9.svg" alt="" />
+                <span>Vòng quay may mắn</span>
+              </a>
+            </div>
+            <div
+              class="navbar__subMenu-item"
+              style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc"
+            >
+              <a href="">
+                <img src="./asset/img/submenu10.svg" alt="" />
+                <span>Tải ứng dụng miễn phí</span>
+              </a>
+            </div>
+            <div class="navbar__subMenu-item">
+              <a href="">
+                <img src="./asset/img/submenu11.svg" alt="" />
+                <span>Trợ giúp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- validation -->
+    <script src="./asset/js/validator.js"></script>
+    <script>
+      Validator({
+        form: "#form-1",
+        formGroupSelector: ".form-group",
+        erroMessage: ".form-message",
+        rules: [
+          Validator.isRequired("#email"),
+          Validator.isEmail("#email"),
+          Validator.minLength("#password", 6),
+        ],
+        onsubmit: function (data) {
+          // call api
+          console.log(data);
+        },
+      });
+    </script>
+  </body>
+</html>
