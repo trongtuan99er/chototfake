@@ -735,7 +735,8 @@ html {
   justify-content: space-between;
   height: 36px;
 }
-.search .search__box {
+
+.search__box {
   border-radius: 4px;
   width: 60%;
   display: flex;
@@ -743,7 +744,7 @@ html {
   align-items: center;
   justify-content: space-between;
 }
-.search .search__box input {
+.search__box input {
   background-color: #ffffff;
   border-radius: 4px;
   color: #222222;
@@ -755,7 +756,7 @@ html {
   border-left: 1px solid #ccc;
   padding: 4px 8px;
 }
-.search .search__box .icon-search {
+.search__box .icon-search {
   display: block;
   line-height: 36px;
   font-size: 2.8rem;
@@ -765,7 +766,7 @@ html {
   margin: 0 10px;
   cursor: pointer;
 }
-.search .search__box .search__box-menu {
+.search__box .search__box-menu {
   align-items: center;
   color: #222222;
   display: flex;
@@ -775,26 +776,65 @@ html {
   line-height: 26.25px;
   text-align: left;
   cursor: pointer;
+  position: relative;
 }
-.search .search__box .search__box-menu span {
+.search__box .search__box-menu span {
   margin: 0px 10.45px;
   text-align: left;
   width: 78px;
   height: 26px;
   font-size: 17.5px;
 }
-.search .search__box .search__box-menu i {
+.search__box .search__box-menu i {
   margin-right: 10px;
 }
-.search .search__login {
+.search__box .search__box-menu:hover .search__box-sub {
+  display: flex;
+}
+.search__box .search__box-menu::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 10px;
+  top: 100%;
+  background-color: transparent;
+}
+.search__box .search__box-sub {
+  top: calc(100% + 10px);
+  position: absolute;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 4px;
+  left: 0;
+  width: 100%;
+  display: none;
+  box-shadow: 0 2px 6px 1px #999;
+}
+.search__box .search__box-sub .search_box-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.search__box .search__box-sub .search_box-item:first-child {
+  border-bottom: 1px solid #ccc;
+}
+.search__box .search__box-sub .search_box-item span {
+  font-size: 16px;
+}
+.search__box .search__box-sub .search_box-item:hover {
+  background-color: #ccc;
+}
+
+.search__login {
   width: 142px;
   height: 100%;
 }
-.search .search__login:hover {
+.search__login:hover {
   cursor: pointer;
   opacity: 0.5;
 }
-.search .search__login .login__link {
+.search__login .login__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -806,7 +846,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.search .search__login .login__link i {
+.search__login .login__link i {
   color: #222222;
   display: inline;
   font-size: 28px;
@@ -814,7 +854,7 @@ html {
   line-height: 32px;
   text-align: left;
 }
-.search .search__login .login__link span {
+.search__login .login__link span {
   width: 100px;
   height: 100%;
   color: inline;
@@ -824,7 +864,8 @@ html {
   text-align: left;
   margin-top: 5px;
 }
-.search .search__btn {
+
+.search__btn {
   border: none;
   width: 150px;
   height: 38px;
@@ -833,7 +874,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
 }
-.search .search__btn:hover {
+.search__btn:hover {
   background-color: #CC7A00 !important;
   cursor: pointer;
 }
@@ -887,6 +928,10 @@ html {
   }
 }
 @media only screen and (max-width: 739px) {
+  #header {
+    z-index: 100;
+  }
+
   .active {
     display: block !important;
   }
@@ -897,12 +942,13 @@ html {
   .notifi_menu .subnotifi_moble {
     position: absolute;
     display: block;
-    z-index: 99;
+    z-index: 50;
     background-color: #fff;
     left: 0;
     right: 0;
-    height: 80vh;
-    top: calc(10rem - 93vh);
+    height: 82vh;
+    top: calc(9rem - 93vh);
+    padding-top: 10px;
     display: none;
   }
   .notifi_menu .subnotifi_moble p {
@@ -944,10 +990,11 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(10rem - 93vh);
-    height: 80vh;
+    top: calc(9rem - 93vh);
+    height: 82vh;
+    padding-top: 15px;
     background-color: #fff;
-    z-index: 100;
+    z-index: 50;
     border: 1px solid rgba(0, 0, 0, 0.15);
   }
   .submenu-moble .navbar__subMenu-login {
@@ -1012,7 +1059,6 @@ html {
   .search .search__box {
     width: 100%;
   }
-
   .menu__list {
     height: 110px;
   }
@@ -1071,7 +1117,7 @@ html {
 
   #footerMb {
     box-shadow: 1px -2px 8px 1px #ccc;
-    z-index: 100;
+    z-index: 50;
     display: flex;
     position: fixed;
     bottom: -2px;
