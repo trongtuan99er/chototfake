@@ -11,6 +11,9 @@
       #login{
               margin-top: 10rem;
               background-image: url('/asset/img/background.webp');
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
       }
       #login .login_header{
         font-size: 16px;
@@ -158,5 +161,11 @@
         display:flex;
         align-items: center;
         justify-content:space-around;
+      }
+
+
+      .navbar .navbar__menu .navbar__subMenu-login{
+        justify-content: space-evenly;
+        font-size: 18px;
       }
   
