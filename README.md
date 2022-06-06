@@ -1,2 +1,3 @@
+Html, Scss, javascript
 # chototfake
-page: https://jazzy-druid-71738d.netlify.app/
+live demo: https://chototnha.netlify.app/
